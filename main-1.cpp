@@ -13,12 +13,5 @@ int main() {
     double distance = Helper::calculateDistance(coords1, coords2);
     std::cout << "Distance between coords1 and coords2: " << distance << "\n";
 
-    GridUnit unit1(std::get<0>(coords1), std::get<1>(coords1), 'U');
-    std::cout << "Unit1: (" << std::get<0>(unit1.getCoordinates()) << ", " << std::get<1>(unit1.getCoordinates()) << "), Entity: " << unit1.getEntity() << "\n";
-
-    unit1.setCoordinates(5, 5);
-    unit1.setEntity('N');
-    std::cout << "Unit1 after update: (" << std::get<0>(unit1.getCoordinates()) << ", " << std::get<1>(unit1.getCoordinates()) << "), Entity: " << unit1.getEntity() << "\n";
-
     return 0;
 }
